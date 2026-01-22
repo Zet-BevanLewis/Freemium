@@ -59,8 +59,8 @@ INSERT INTO LIGHTNING_ROLE (
     FK_ORGANISATION_ID
 ) VALUES (
     25,
-    'DEV_ROLE',
-    'role for dev test',
+    'ADMIN',
+    'role for admin',
     '2022-11-23 12:05:37.719',
     'DEV@ACCOUNT.COM',
     false,
