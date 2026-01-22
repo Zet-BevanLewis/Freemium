@@ -50,13 +50,13 @@ On windows , we need to convert the files to unix mode. In the Windows Powershel
    docker-compose up
   ```
 
-### Add dev account
+### Add user
 
 ```bash
-docker-compose exec -it zetaris-db /scripts/generate_default_dev_users.sh
+docker-compose  exec -it  zetaris-server /home/zetaris/lightning/bin/dev-account.sh admin@zetaris.com P@55w0rd! Zetaris  
 ```
 
-a user `dev@account.com` will be added and password is `password`
+a user `admin@zetaris.com` will be added and password is `P@55w0rd!`
 
 ## KNOWN ISSUES
 
@@ -76,14 +76,6 @@ So at the beginning, there will be some warnings  like below, this is ok if serv
 
 The driver docker image might seems to fail if the images don't execute in the correct order, if the above warning keeps going, you may go to docker desktop console to restart it if it hangs
 You just need to restart the zetaris-server only until it starts successfully
-
-### Add dev account again in case you see an authentication error while logging in with the <dev@account.com> credentials
-
-```bash
-docker-compose  exec -it  zetaris-server /home/zetaris/lightning/bin/dev-account.sh dev@zetaris.com P@55w0rd! Zetaris0        
-```
-
-a user `dev@account.com` will be added and password is `password`
 
 # Third party jdbc support
 
