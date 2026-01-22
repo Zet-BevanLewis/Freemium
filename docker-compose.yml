@@ -160,6 +160,3 @@ volumes:
   opensearch-data: # Persistent data volume for OpenSearch
   ollama:
   privateai:
-
-networks:
-  privateai:
