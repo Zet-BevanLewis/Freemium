@@ -102,7 +102,7 @@ services:
       - FLASK_APP=app.py # Replace with your main Flask app file
     depends_on:
       - ollama
-      - opensearch
+      - opensearch-cluster-master
 
   # Tools
   tools:
@@ -135,7 +135,7 @@ services:
               capabilities: [gpu]
 
   # OpenSearch
-  opensearch:
+  opensearch-cluster-master:
     image: opensearchproject/opensearch:2.11.0
     ports:
       - "9200:9200" # Expose OpenSearch port
