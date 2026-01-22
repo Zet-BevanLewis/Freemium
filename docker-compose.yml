@@ -9,7 +9,6 @@ services:
     volumes:
       - ./datadir/pg:/var/lib/postgresql/data/pgdata
       - ./lightning/db/postgres/initdb:/docker-entrypoint-initdb.d/
-      - ./lightning/db/postgres/scripts:/scripts
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=password

@@ -80,7 +80,7 @@ You just need to restart the zetaris-server only until it starts successfully
 ### Add dev account again in case you see an authentication error while logging in with the <dev@account.com> credentials
 
 ```bash
-docker-compose  exec -it  zetaris-server /home/zetaris/lightning/bin/dev-account.sh brian.momongan@zetaris.com P@55w0rd! Zetaris0        
+docker-compose  exec -it  zetaris-server /home/zetaris/lightning/bin/dev-account.sh dev@zetaris.com P@55w0rd! Zetaris0        
 ```
 
 a user `dev@account.com` will be added and password is `password`
